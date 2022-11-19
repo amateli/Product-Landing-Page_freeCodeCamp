@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+  font-family: "Lato", sans-serif;  
+}
+
+.container {
+  position: relative;
+}
+
+header, nav>ul {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  padding: 0 20px;
+  justify-content: space-around;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  min-width: 100vw;
+  background-color: #eee;
+}
+
+#header-img {
+  width: 300px;
+}
+
+nav>ul {
+  height: inherit;
+  margin: 0;
+  justify-content: space-evenly;
+  padding-inline-start: 0;
+  list-style-type: none;
+  width: 500px;
+}
+
+ nav, .nav-link {
+  height: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+#form {
+  max-width: 500px;
+  min-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#form h2 {
+  margin-bottom: 20px;
+}
+
+#email {
+  padding: 5px;
+  width: 60%;
+  max-width: 60%;
+  margin: auto;
+}
+
+.btn {
+  padding: 0 20px;
+  text-transform: uppercase;
+  background-color: #f1cf04;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.btn:hover, .btn:active {
+  background-color: orange;
+  transition: background-color 1s ease;
+}
+
+#submit {
+  max-width: 40%;
+  margin: 20px auto;
+  font-size: large;
+  font-weight: 900;
+}
+
+section {
+  /* margin-top: 80px; */
+}
+
+#features svg {
+  height: 50px;
+  fill: darkorange;
+}
+
+#features .items {
+  display: grid;
+  grid-template-columns: minmax(50px, 200px) minmax(300px, 800px);
+  grid-template-rows: 125px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+#features .icon {
+  text-align: center;
+}
